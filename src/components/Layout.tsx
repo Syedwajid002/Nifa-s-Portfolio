@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Outlet, NavLink, Link } from 'react-router-dom';
-import { Menu, X, Github, Linkedin, Mail, FileText } from 'lucide-react';
+import { Menu, X, Github, Linkedin, Mail } from 'lucide-react';
 import Footer from './Footer';
 
 const Layout: React.FC = () => {
@@ -27,13 +27,12 @@ const Layout: React.FC = () => {
   return (
     <div className="min-h-screen flex flex-col">
       <header
-        className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-          isScrolled ? 'header-scrolled py-3' : 'py-5 bg-transparent'
-        }`}
+        className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${isScrolled ? 'header-scrolled py-3' : 'py-5 bg-transparent'
+          }`}
       >
         <div className="container flex justify-between items-center">
           <Link to="/" className="font-bold text-2xl text-blue-900">
-            ISR Portfolio
+            Nifa's Portfolio
           </Link>
 
           {/* Desktop Navigation */}
@@ -70,9 +69,8 @@ const Layout: React.FC = () => {
 
         {/* Mobile Navigation */}
         <div
-          className={`md:hidden absolute top-full left-0 right-0 bg-white shadow-lg transition-all duration-300 overflow-hidden ${
-            isMenuOpen ? 'max-h-96' : 'max-h-0'
-          }`}
+          className={`md:hidden absolute top-full left-0 right-0 bg-white shadow-lg transition-all duration-300 overflow-hidden ${isMenuOpen ? 'max-h-96' : 'max-h-0'
+            }`}
         >
           <div className="container py-4 flex flex-col space-y-4">
             <NavLink
