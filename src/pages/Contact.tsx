@@ -8,9 +8,9 @@ const Contact: React.FC = () => {
     subject: '',
     message: '',
   });
-  
+
   const [isSubmitting, setIsSubmitting] = useState(false);
-  const [submitMessage, setSubmitMessage] = useState<{text: string, type: 'success' | 'error'} | null>(null);
+  const [submitMessage, setSubmitMessage] = useState<{ text: string, type: 'success' | 'error' } | null>(null);
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
     const { name, value } = e.target;
@@ -23,7 +23,7 @@ const Contact: React.FC = () => {
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     setIsSubmitting(true);
-    
+
     // Simulate form submission
     setTimeout(() => {
       setIsSubmitting(false);
@@ -31,7 +31,7 @@ const Contact: React.FC = () => {
         text: 'Thank you for your message! I will get back to you as soon as possible.',
         type: 'success',
       });
-      
+
       // Reset form
       setFormData({
         name: '',
@@ -39,7 +39,7 @@ const Contact: React.FC = () => {
         subject: '',
         message: '',
       });
-      
+
       // Clear success message after 5 seconds
       setTimeout(() => {
         setSubmitMessage(null);
@@ -69,8 +69,8 @@ const Contact: React.FC = () => {
               </div>
               <h3 className="text-xl font-bold mb-2 text-blue-900">Email</h3>
               <p className="text-gray-700 mb-4">Feel free to email me anytime</p>
-              <a href="mailto:example@email.com" className="text-blue-900 font-medium hover:underline">
-                example@email.com
+              <a href="mailto:Nifa2025@email.com" className="text-blue-900 font-medium hover:underline">
+                Nifa2025@email.com
               </a>
             </div>
             <div className="card p-6 flex flex-col items-center text-center hover:shadow-xl transition-all">
@@ -99,17 +99,16 @@ const Contact: React.FC = () => {
             {/* Contact Form */}
             <div>
               <h2 className="text-3xl font-bold mb-6 text-blue-900">Send Me a Message</h2>
-              
+
               {submitMessage && (
-                <div 
-                  className={`p-4 mb-6 rounded-lg ${
-                    submitMessage.type === 'success' ? 'bg-green-100 text-green-800' : 'bg-red-100 text-red-800'
-                  }`}
+                <div
+                  className={`p-4 mb-6 rounded-lg ${submitMessage.type === 'success' ? 'bg-green-100 text-green-800' : 'bg-red-100 text-red-800'
+                    }`}
                 >
                   {submitMessage.text}
                 </div>
               )}
-              
+
               <form onSubmit={handleSubmit} className="space-y-6">
                 <div>
                   <label htmlFor="name" className="block text-sm font-medium text-gray-700 mb-1">
@@ -123,10 +122,10 @@ const Contact: React.FC = () => {
                     onChange={handleChange}
                     required
                     className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-900 focus:border-transparent"
-                    placeholder="John Doe"
+                    placeholder="Nifa Naushadbhai"
                   />
                 </div>
-                
+
                 <div>
                   <label htmlFor="email" className="block text-sm font-medium text-gray-700 mb-1">
                     Your Email
@@ -142,7 +141,7 @@ const Contact: React.FC = () => {
                     placeholder="john@example.com"
                   />
                 </div>
-                
+
                 <div>
                   <label htmlFor="subject" className="block text-sm font-medium text-gray-700 mb-1">
                     Subject
@@ -163,7 +162,7 @@ const Contact: React.FC = () => {
                     <option value="Other">Other</option>
                   </select>
                 </div>
-                
+
                 <div>
                   <label htmlFor="message" className="block text-sm font-medium text-gray-700 mb-1">
                     Message
@@ -179,7 +178,7 @@ const Contact: React.FC = () => {
                     placeholder="Your message here..."
                   ></textarea>
                 </div>
-                
+
                 <button
                   type="submit"
                   disabled={isSubmitting}
@@ -201,7 +200,7 @@ const Contact: React.FC = () => {
                 </button>
               </form>
             </div>
-            
+
             {/* Connect Section */}
             <div>
               <h2 className="text-3xl font-bold mb-6 text-blue-900">Connect With Me</h2>
@@ -236,7 +235,7 @@ const Contact: React.FC = () => {
                   </a>
                 </div>
               </div>
-              
+
               <div className="bg-blue-900 text-white p-6 rounded-lg">
                 <h3 className="text-xl font-bold mb-4">Availability</h3>
                 <p className="mb-4">

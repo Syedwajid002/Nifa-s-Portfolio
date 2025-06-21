@@ -26,7 +26,7 @@ const About: React.FC = () => {
               />
             </div>
             <div>
-              <h2 className="text-3xl font-bold mb-6 text-blue-900">John Doe</h2>
+              <h2 className="text-3xl font-bold mb-6 text-blue-900">Nifa Naushadbhai</h2>
               <p className="text-gray-700 mb-6">
                 I am an IT professional with over 5 years of experience in system administration, network management, and team leadership. My goal is to leverage my technical expertise and management skills to lead IT teams in delivering efficient and innovative solutions.
               </p>
@@ -63,57 +63,29 @@ const About: React.FC = () => {
           <div className="max-w-3xl mx-auto space-y-12">
             <div className="relative pl-10 md:pl-0">
               <div className="hidden md:block absolute left-1/2 transform -translate-x-1/2 top-0 bottom-0 w-0.5 bg-blue-200"></div>
-              
+
               <div className="md:flex items-center relative">
                 <div className="hidden md:block absolute left-1/2 transform -translate-x-1/2 -ml-0.5 w-6 h-6 rounded-full bg-blue-900 z-10"></div>
-                
+
                 <div className="md:w-1/2 md:pr-12 md:text-right mb-6 md:mb-0">
-                  <h3 className="text-xl font-bold text-blue-900">IT Support Lead</h3>
-                  <p className="text-gray-600">ABC Technology Solutions</p>
-                  <p className="text-gray-500">2020 - Present</p>
+                  <h3 className="text-xl font-bold text-blue-900">IT Support Intern</h3>
+                  <p className="text-gray-600">Royal Cyber Inc</p>
+                  <p className="text-gray-500">Jul 2024 - Jan 2025</p>
                 </div>
-                
+
                 <div className="bg-white p-6 rounded-lg shadow-md md:w-1/2 md:ml-12">
                   <Briefcase className="text-blue-900 mb-4 inline-block md:hidden" />
                   <p className="text-gray-700">
-                    Led a team of 5 IT support specialists, ensuring timely resolution of technical issues and maintaining 99.9% system uptime. Implemented new ticketing system that improved response time by 35%.
+                    Performed initial troubleshooting for basic network issues, system alerts, and user connectivity complaints.Created and managed incident tickets using ServiceNow, including documenting resolution steps and escalating
+                    unresolved issues to L2/L3.Logged and responded to incoming issues through ServiceNow Incident Management, maintaining SLA timelines
+                    and proper ticket categorization.
                   </p>
                 </div>
               </div>
-              
-              <div className="md:flex items-center relative mt-12">
-                <div className="hidden md:block absolute left-1/2 transform -translate-x-1/2 -ml-0.5 w-6 h-6 rounded-full bg-blue-900 z-10"></div>
-                
-                <div className="md:w-1/2 md:pr-12 md:text-right mb-6 md:mb-0">
-                  <h3 className="text-xl font-bold text-blue-900">Network Administrator</h3>
-                  <p className="text-gray-600">XYZ Corporation</p>
-                  <p className="text-gray-500">2018 - 2020</p>
-                </div>
-                
-                <div className="bg-white p-6 rounded-lg shadow-md md:w-1/2 md:ml-12">
-                  <Briefcase className="text-blue-900 mb-4 inline-block md:hidden" />
-                  <p className="text-gray-700">
-                    Managed network infrastructure for a company of 200+ employees. Designed and implemented network security protocols that reduced security incidents by 60%. Led migration to cloud-based services.
-                  </p>
-                </div>
-              </div>
-              
-              <div className="md:flex items-center relative mt-12">
-                <div className="hidden md:block absolute left-1/2 transform -translate-x-1/2 -ml-0.5 w-6 h-6 rounded-full bg-blue-900 z-10"></div>
-                
-                <div className="md:w-1/2 md:pr-12 md:text-right mb-6 md:mb-0">
-                  <h3 className="text-xl font-bold text-blue-900">IT Support Specialist</h3>
-                  <p className="text-gray-600">123 Systems</p>
-                  <p className="text-gray-500">2016 - 2018</p>
-                </div>
-                
-                <div className="bg-white p-6 rounded-lg shadow-md md:w-1/2 md:ml-12">
-                  <Briefcase className="text-blue-900 mb-4 inline-block md:hidden" />
-                  <p className="text-gray-700">
-                    Provided technical support to clients, resolving hardware and software issues. Developed and maintained system documentation. Participated in the deployment of new client systems.
-                  </p>
-                </div>
-              </div>
+
+
+
+
             </div>
           </div>
         </div>

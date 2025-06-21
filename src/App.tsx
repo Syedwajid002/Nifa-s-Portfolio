@@ -7,6 +7,7 @@ import Projects from './pages/Projects';
 import Skills from './pages/Skills';
 import Resume from './pages/Resume';
 import Contact from './pages/Contact';
+import IsIm from './pages/IsIm';
 
 function App() {
   return (
@@ -19,6 +20,8 @@ function App() {
           <Route path="skills" element={<Skills />} />
           <Route path="resume" element={<Resume />} />
           <Route path="contact" element={<Contact />} />
+          <Route path="IsIm" element={<IsIm />} />
+
         </Route>
       </Routes>
     </Router>

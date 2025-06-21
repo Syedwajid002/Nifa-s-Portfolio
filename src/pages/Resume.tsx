@@ -18,17 +18,17 @@ const Resume: React.FC = () => {
       <section className="py-8 bg-white border-b">
         <div className="container flex flex-col md:flex-row justify-between items-center">
           <div className="mb-4 md:mb-0">
-            <h2 className="text-2xl font-bold text-blue-900">John Doe - IT Manager</h2>
-            <p className="text-gray-600">San Francisco, CA | example@email.com | (555) 123-4567</p>
+            <h2 className="text-2xl font-bold text-blue-900">Nifa Naushadbhai - IT Manager</h2>
+            <p className="text-gray-600">San Francisco, CA | Nifa2025@gmail.com | (555) 123-4567</p>
           </div>
           <a
-            href="/resume.pdf"
+            href="/nifa.pdf"
             download
             className="btn btn-primary flex items-center"
-            onClick={(e) => {
-              e.preventDefault();
-              alert('In a real application, this would download the PDF version of the resume.');
-            }}
+          // onClick={(e) => {
+          //   e.preventDefault();
+          //   alert('In a real application, this would download the PDF version of the resume.');
+          // }}
           >
             <Download size={20} className="mr-2" /> Download PDF
           </a>
@@ -54,49 +54,20 @@ const Resume: React.FC = () => {
               <h2 className="text-2xl font-bold text-blue-900 mb-6 flex items-center">
                 <Briefcase className="mr-3" /> Professional Experience
               </h2>
-              
+
+
               <div className="mb-8">
                 <div className="flex flex-col md:flex-row md:justify-between mb-2">
-                  <h3 className="text-xl font-bold text-blue-900">IT Support Lead</h3>
-                  <p className="text-gray-600">2020 - Present</p>
-                </div>
-                <p className="text-gray-700 mb-2">ABC Technology Solutions, San Francisco, CA</p>
-                <ul className="list-disc pl-5 space-y-2 text-gray-700">
-                  <li>Lead a team of 5 IT support specialists, providing technical guidance and mentorship.</li>
-                  <li>Implemented a new ticketing system that improved response time by 35% and customer satisfaction by 28%.</li>
-                  <li>Developed and maintained IT policies and procedures, ensuring compliance with industry standards.</li>
-                  <li>Collaborated with senior management to align IT support strategies with business objectives.</li>
-                  <li>Reduced operational costs by 20% through process optimization and strategic resource allocation.</li>
-                </ul>
-              </div>
-              
-              <div className="mb-8">
-                <div className="flex flex-col md:flex-row md:justify-between mb-2">
-                  <h3 className="text-xl font-bold text-blue-900">Network Administrator</h3>
+                  <h3 className="text-xl font-bold text-blue-900">IT L1 Support </h3>
                   <p className="text-gray-600">2018 - 2020</p>
                 </div>
-                <p className="text-gray-700 mb-2">XYZ Corporation, Oakland, CA</p>
+                <p className="text-gray-700 mb-2">Royal Cyber Inc.</p>
                 <ul className="list-disc pl-5 space-y-2 text-gray-700">
                   <li>Managed network infrastructure for a company of 200+ employees across multiple locations.</li>
                   <li>Designed and implemented network security protocols that reduced security incidents by 60%.</li>
                   <li>Led migration to cloud-based services, resulting in 30% improvement in system performance.</li>
                   <li>Conducted regular network audits and vulnerability assessments to ensure data integrity.</li>
                   <li>Trained staff on network security best practices and IT policies.</li>
-                </ul>
-              </div>
-              
-              <div>
-                <div className="flex flex-col md:flex-row md:justify-between mb-2">
-                  <h3 className="text-xl font-bold text-blue-900">IT Support Specialist</h3>
-                  <p className="text-gray-600">2016 - 2018</p>
-                </div>
-                <p className="text-gray-700 mb-2">123 Systems, San Jose, CA</p>
-                <ul className="list-disc pl-5 space-y-2 text-gray-700">
-                  <li>Provided technical support to clients, resolving hardware and software issues.</li>
-                  <li>Developed and maintained system documentation for internal and client use.</li>
-                  <li>Participated in the deployment of new client systems and network infrastructure.</li>
-                  <li>Assisted in the implementation of disaster recovery and business continuity plans.</li>
-                  <li>Maintained a 95% customer satisfaction rating based on post-service surveys.</li>
                 </ul>
               </div>
             </div>
@@ -106,22 +77,22 @@ const Resume: React.FC = () => {
               <h2 className="text-2xl font-bold text-blue-900 mb-6 flex items-center">
                 <GraduationCap className="mr-3" /> Education
               </h2>
-              
+
               <div className="mb-6">
                 <div className="flex flex-col md:flex-row md:justify-between mb-2">
                   <h3 className="text-xl font-bold text-blue-900">Master of Science in Information Technology</h3>
-                  <p className="text-gray-600">2014 - 2016</p>
+                  <p className="text-gray-600">2022 - 2026</p>
                 </div>
                 <p className="text-gray-700">University of Technology, San Francisco, CA</p>
                 <p className="text-gray-700 mt-2">
                   Specialized in IT Management and Information Security. Thesis on "Optimizing IT Resource Allocation in Mid-Size Enterprises."
                 </p>
               </div>
-              
+
               <div>
                 <div className="flex flex-col md:flex-row md:justify-between mb-2">
                   <h3 className="text-xl font-bold text-blue-900">Bachelor of Science in Computer Science</h3>
-                  <p className="text-gray-600">2010 - 2014</p>
+                  <p className="text-gray-600">2018 - 2022</p>
                 </div>
                 <p className="text-gray-700">State University, Los Angeles, CA</p>
                 <p className="text-gray-700 mt-2">
@@ -135,7 +106,7 @@ const Resume: React.FC = () => {
               <h2 className="text-2xl font-bold text-blue-900 mb-6 flex items-center">
                 <Award className="mr-3" /> Certifications
               </h2>
-              
+
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                 <div className="bg-gray-50 p-4 rounded-lg">
                   <h3 className="font-bold text-blue-900">CompTIA A+</h3>
@@ -161,7 +132,7 @@ const Resume: React.FC = () => {
               <h2 className="text-2xl font-bold text-blue-900 mb-6 flex items-center">
                 <FileText className="mr-3" /> Skills
               </h2>
-              
+
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 <div>
                   <h3 className="font-bold text-blue-900 mb-3">Technical Skills</h3>
@@ -200,43 +171,36 @@ const Resume: React.FC = () => {
           <div className="bg-gray-100 p-4 rounded-lg flex justify-center">
             <div className="bg-white shadow-lg p-8 max-w-2xl w-full">
               <div className="text-center mb-6">
-                <h2 className="text-2xl font-bold text-blue-900">John Doe</h2>
+                <h2 className="text-2xl font-bold text-blue-900">Nifa Naushadbhai</h2>
                 <p className="text-gray-700">IT Manager</p>
                 <div className="flex justify-center items-center mt-2 text-sm text-gray-600">
                   <span>San Francisco, CA</span>
                   <span className="mx-2">•</span>
-                  <span>example@email.com</span>
+                  <span>Nifa2025@gmail.com</span>
                   <span className="mx-2">•</span>
                   <span>(555) 123-4567</span>
                 </div>
               </div>
-              
+
               <div className="mb-4">
                 <h3 className="text-lg font-bold border-b-2 border-blue-900 pb-1 mb-2">Professional Summary</h3>
                 <p className="text-sm text-gray-700">
-                  IT professional with over 5 years of experience in system administration, network management, and team leadership. Demonstrated success in implementing efficient IT solutions...
+                  IT professional with over 1 year of experience in system administration, network management, and team leadership. Demonstrated success in implementing efficient IT solutions...
                 </p>
               </div>
-              
+
               <div className="mb-4">
                 <h3 className="text-lg font-bold border-b-2 border-blue-900 pb-1 mb-2">Experience</h3>
+
                 <div className="mb-2">
                   <div className="flex justify-between">
-                    <span className="font-bold">IT Support Lead</span>
-                    <span className="text-sm">2020 - Present</span>
+                    <span className="font-bold">IT L1 Support </span>
+                    <span className="text-sm">Jul 2024 - Jan 2025</span>
                   </div>
-                  <p className="text-sm">ABC Technology Solutions, San Francisco, CA</p>
-                </div>
-                
-                <div className="mb-2">
-                  <div className="flex justify-between">
-                    <span className="font-bold">Network Administrator</span>
-                    <span className="text-sm">2018 - 2020</span>
-                  </div>
-                  <p className="text-sm">XYZ Corporation, Oakland, CA</p>
+                  <p className="text-sm">Royal Cyber Inc.</p>
                 </div>
               </div>
-              
+
               <div>
                 <h3 className="text-lg font-bold border-b-2 border-blue-900 pb-1 mb-2">Education</h3>
                 <div className="flex justify-between">
@@ -245,7 +209,7 @@ const Resume: React.FC = () => {
                 </div>
                 <p className="text-sm">University of Technology, San Francisco, CA</p>
               </div>
-              
+
               <div className="text-center mt-8 text-gray-500 text-sm italic">
                 [Preview truncated - Download for full resume]
               </div>
@@ -253,13 +217,13 @@ const Resume: React.FC = () => {
           </div>
           <div className="text-center mt-8">
             <a
-              href="/resume.pdf"
+              href="/nifa.pdf"
               download
               className="btn btn-primary inline-flex items-center"
-              onClick={(e) => {
-                e.preventDefault();
-                alert('In a real application, this would download the PDF version of the resume.');
-              }}
+            // onClick={(e) => {
+            //   e.preventDefault();
+            //   alert('In a real application, this would download the PDF version of the resume.');
+            // }}
             >
               <Download size={20} className="mr-2" /> Download Full Resume
             </a>

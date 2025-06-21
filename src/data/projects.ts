@@ -21,7 +21,7 @@ export const featuredProjects: Project[] = [
     id: '3',
     title: 'Cloud Migration Strategy',
     description: 'Developed and executed strategy for migrating on-premises systems to cloud infrastructure, resulting in 40% cost savings and improved scalability.',
-    image: 'https://images.pexels.com/photos/8164171/pexels-photo-8164171.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
+    image: 'https://cdn2.hubspot.net/hubfs/2488049/cloud-migration-min.jpg',
     category: 'technical',
     technologies: ['AWS', 'Azure', 'Cloud Architecture', 'Migration Planning'],
   }

@@ -43,6 +43,9 @@ const Layout: React.FC = () => {
             <NavLink to="/about" className="nav-link">
               About
             </NavLink>
+            <NavLink to="/IsIm" className="nav-link">
+              Customer Service & Incident Toolkit
+            </NavLink>
             <NavLink to="/projects" className="nav-link">
               Projects
             </NavLink>
@@ -135,7 +138,7 @@ const Layout: React.FC = () => {
                 <Linkedin size={20} />
               </a>
               <a
-                href="mailto:example@email.com"
+                href="mailto:Nifa2025@email.com"
                 className="p-2 text-gray-600 hover:text-blue-900 transition-colors"
               >
                 <Mail size={20} />
