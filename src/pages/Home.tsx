@@ -13,11 +13,10 @@ const Home: React.FC = () => {
         <div className="container relative z-10">
           <div className="max-w-3xl">
             <h1 className="text-5xl md:text-6xl font-bold mb-6 animate-[fadeIn_0.8s_ease-in-out]">
-              IT Supervisor Readiness Portfolio
+              I'm an IT Supervisor & Network Administrator
             </h1>
             <p className="text-xl md:text-2xl text-blue-100 mb-8 animate-[fadeIn_0.8s_0.2s_ease-in-out_forwards] opacity-0">
-              A comprehensive showcase of My qualifications, projects, and skills
-              demonstrating readiness for IT management roles.
+              Empowering teams and securing networks with strategic IT leadership.
             </p>
             <div className="flex flex-wrap gap-4 animate-[fadeIn_0.8s_0.4s_ease-in-out_forwards] opacity-0">
               <Link to="/projects" className="btn btn-secondary">
