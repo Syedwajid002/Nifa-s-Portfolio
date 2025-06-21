@@ -16,7 +16,7 @@ const Home: React.FC = () => {
               IT Supervisor Readiness Portfolio
             </h1>
             <p className="text-xl md:text-2xl text-blue-100 mb-8 animate-[fadeIn_0.8s_0.2s_ease-in-out_forwards] opacity-0">
-              A comprehensive showcase of qualifications, projects, and skills
+              A comprehensive showcase of My qualifications, projects, and skills
               demonstrating readiness for IT management roles.
             </p>
             <div className="flex flex-wrap gap-4 animate-[fadeIn_0.8s_0.4s_ease-in-out_forwards] opacity-0">
