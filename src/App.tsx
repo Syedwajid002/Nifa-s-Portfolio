@@ -8,6 +8,7 @@ import Skills from './pages/Skills';
 import Resume from './pages/Resume';
 import Contact from './pages/Contact';
 import IsIm from './pages/IsIm';
+import KPIDashboard from './pages/KPI&Budget';
 
 function App() {
   return (
@@ -21,6 +22,8 @@ function App() {
           <Route path="resume" element={<Resume />} />
           <Route path="contact" element={<Contact />} />
           <Route path="IsIm" element={<IsIm />} />
+          <Route path="Kpi" element={<KPIDashboard />} />
+
 
         </Route>
       </Routes>
