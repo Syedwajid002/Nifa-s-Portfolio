@@ -120,7 +120,7 @@ const Layout: React.FC = () => {
               className="px-4 py-2 hover:bg-gray-100 rounded"
               onClick={toggleMenu}
             >
-              About
+              KPI & Dashboard
             </NavLink>
             <NavLink
               to="/IsIm"
