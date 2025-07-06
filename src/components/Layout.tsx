@@ -116,6 +116,13 @@ const Layout: React.FC = () => {
               About
             </NavLink>
             <NavLink
+              to="/KPI"
+              className="px-4 py-2 hover:bg-gray-100 rounded"
+              onClick={toggleMenu}
+            >
+              About
+            </NavLink>
+            <NavLink
               to="/IsIm"
               className="px-4 py-2 hover:bg-gray-100 rounded"
               onClick={toggleMenu}
