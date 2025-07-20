@@ -9,7 +9,7 @@ import Resume from './pages/Resume';
 import Contact from './pages/Contact';
 import IsIm from './pages/IsIm';
 import KPIDashboard from './pages/KPI&Budget';
-
+import TeamLeadershipHRSection from './pages/TeamLeader'
 function App() {
   return (
     <Router>
@@ -23,7 +23,7 @@ function App() {
           <Route path="contact" element={<Contact />} />
           <Route path="IsIm" element={<IsIm />} />
           <Route path="Kpi" element={<KPIDashboard />} />
-
+          <Route path='teamLeader' element={<TeamLeadershipHRSection />} />
 
         </Route>
       </Routes>

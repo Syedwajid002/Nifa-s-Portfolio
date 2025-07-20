@@ -43,12 +43,38 @@ const Layout: React.FC = () => {
             <NavLink to="/about" className="nav-link">
               About
             </NavLink>
-            <NavLink to="/kpi" className="nav-link">
-              KPI & Budget Tools
+            <NavLink to="/TeamLeader" className="nav-link">
+              Team Leadership & HR Tools
             </NavLink>
-            <NavLink to="/IsIm" className="nav-link">
-              Customer Service & Incident Toolkit
-            </NavLink>
+            <div className="relative group">
+              <button className="nav-link flex items-center gap-1">
+                Tools
+                <svg className="w-4 h-4" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M19 9l-7 7-7-7" />
+                </svg>
+              </button>
+
+              <div className="absolute z-50 hidden group-hover:block bg-white shadow-md rounded-md mt-2 w-48 border border-gray-200">
+                <NavLink
+                  to="/IsIm"
+                  className="block px-4 py-2 text-sm text-gray-700 hover:bg-blue-50"
+                >
+                  Customer Service & Incident Toolkit
+                </NavLink>
+                <NavLink
+                  to="/kpi"
+                  className="block px-4 py-2 text-sm text-gray-700 hover:bg-blue-50"
+                >
+                  KPI & Budget Tools
+                </NavLink>
+                <NavLink
+                  to="/resume"
+                  className="block px-4 py-2 text-sm text-gray-700 hover:bg-blue-50"
+                >
+                  Resume
+                </NavLink>
+              </div>
+            </div>
             <div className="relative group">
               <button className="nav-link flex items-center gap-1">
                 Work & Skills
@@ -114,6 +140,14 @@ const Layout: React.FC = () => {
               onClick={toggleMenu}
             >
               About
+            </NavLink>
+            <NavLink
+              to="/TeamLeader"
+              className="px-4 py-2 hover:bg-gray-100 rounded"
+              onClick={toggleMenu}
+            >
+              Team
+              Leadership & HR Tools
             </NavLink>
             <NavLink
               to="/KPI"
