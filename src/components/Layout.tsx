@@ -43,8 +43,8 @@ const Layout: React.FC = () => {
             <NavLink to="/about" className="nav-link">
               About
             </NavLink>
-            <NavLink to="/TeamLeader" className="nav-link">
-              Team Leadership & HR Tools
+            <NavLink to="/ethics" className="nav-link">
+              Ethics, Systems & Culture
             </NavLink>
             <div className="relative group">
               <button className="nav-link flex items-center gap-1">
@@ -55,6 +55,12 @@ const Layout: React.FC = () => {
               </button>
 
               <div className="absolute z-50 hidden group-hover:block bg-white shadow-md rounded-md mt-2 w-48 border border-gray-200">
+                <NavLink
+                  to="/TeamLeader"
+                  className="block px-4 py-2 text-sm text-gray-700 hover:bg-blue-50"
+                >
+                  Team Leadership & HR Tools
+                </NavLink>
                 <NavLink
                   to="/IsIm"
                   className="block px-4 py-2 text-sm text-gray-700 hover:bg-blue-50"
@@ -140,6 +146,13 @@ const Layout: React.FC = () => {
               onClick={toggleMenu}
             >
               About
+            </NavLink>
+            <NavLink
+              to="/ethics"
+              className="px-4 py-2 hover:bg-gray-100 rounded"
+              onClick={toggleMenu}
+            >
+              Ethics, Systems & Culture
             </NavLink>
             <NavLink
               to="/TeamLeader"
