@@ -105,7 +105,7 @@ const Footer: React.FC = () => {
           <div>
             <h3 className="text-xl font-bold mb-4">Contact</h3>
             <p className="text-gray-300 mb-2">Email: Nifa2025@email.com</p>
-            <p className="text-gray-300 mb-2">Phone: (+1) 123-4567</p>
+            <p className="text-gray-300 mb-2">Phone: (+1) 897-4567</p>
             <p className="text-gray-300">Location: San Francisco, CA</p>
           </div>
         </div>
