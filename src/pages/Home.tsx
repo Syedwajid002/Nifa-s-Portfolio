@@ -66,7 +66,7 @@ const Home: React.FC = () => {
                 <div className="bg-white p-4 rounded-lg shadow flex items-start">
                   <Briefcase className="text-blue-900 mr-3 flex-shrink-0" />
                   <div>
-                    <h4 className="font-semibold mb-1">5+ Years Experience</h4>
+                    <h4 className="font-semibold mb-1">1 Year Experience</h4>
                     <p className="text-sm text-gray-600">IT support & management</p>
                   </div>
                 </div>

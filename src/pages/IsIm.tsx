@@ -429,7 +429,7 @@ If you notice any other issues or have questions, please don't hesitate to reach
 Best regards,
 Alex Thompson
 IT Support Specialist
-Direct: (555) 123-1234
+Direct: (+1) 123-1234
 Ticket #: CS-2024-0156`;
 
     useEffect(() => {

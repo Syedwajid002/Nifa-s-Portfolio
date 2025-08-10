@@ -19,7 +19,7 @@ const Resume: React.FC = () => {
         <div className="container flex flex-col md:flex-row justify-between items-center">
           <div className="mb-4 md:mb-0">
             <h2 className="text-2xl font-bold text-blue-900">Nifa Naushadbhai - IT Manager</h2>
-            <p className="text-gray-600">San Francisco, CA | Nifa2025@gmail.com | (555) 123-4567</p>
+            <p className="text-gray-600">San Francisco, CA | Nifa2025@gmail.com | (+1) 123-4567</p>
           </div>
           <a
             href="/nifa.pdf"
@@ -178,7 +178,7 @@ const Resume: React.FC = () => {
                   <span className="mx-2">•</span>
                   <span>Nifa2025@gmail.com</span>
                   <span className="mx-2">•</span>
-                  <span>(555) 123-4567</span>
+                  <span>(+1) 123-4567</span>
                 </div>
               </div>
 

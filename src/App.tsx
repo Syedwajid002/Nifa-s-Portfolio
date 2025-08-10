@@ -11,6 +11,9 @@ import IsIm from './pages/IsIm';
 import KPIDashboard from './pages/KPI&Budget';
 import TeamLeadershipHRSection from './pages/TeamLeader'
 import EthicsSystemsCulture from './pages/Ethics'
+import ExecutiveSummary from './pages/Summary';
+import CoachingToolkit from './pages/Coaching';
+import NifaTimelineSection from './pages/Timeline';
 function App() {
   return (
     <Router>
@@ -26,6 +29,12 @@ function App() {
           <Route path="Kpi" element={<KPIDashboard />} />
           <Route path='teamLeader' element={<TeamLeadershipHRSection />} />
           <Route path="ethics" element={<EthicsSystemsCulture />} />
+          <Route path="summary" element={<ExecutiveSummary />} />
+          <Route path="coaching" element={<CoachingToolkit />} />
+          <Route path="timeline" element={<NifaTimelineSection />} />
+
+
+
 
 
 

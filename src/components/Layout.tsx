@@ -43,18 +43,30 @@ const Layout: React.FC = () => {
             <NavLink to="/about" className="nav-link">
               About
             </NavLink>
-            <NavLink to="/ethics" className="nav-link">
-              Ethics, Systems & Culture
+            <NavLink to="/timeline" className="nav-link">
+              Timeline (Gannt Chart)
             </NavLink>
             <div className="relative group">
               <button className="nav-link flex items-center gap-1">
-                Tools
+                LeaderShip Tools
                 <svg className="w-4 h-4" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" d="M19 9l-7 7-7-7" />
                 </svg>
               </button>
 
               <div className="absolute z-50 hidden group-hover:block bg-white shadow-md rounded-md mt-2 w-48 border border-gray-200">
+                <NavLink
+                  to="/coaching"
+                  className="block px-4 py-2 text-sm text-gray-700 hover:bg-blue-50"
+                >
+                  Coaching & Communication
+                </NavLink>
+                <NavLink
+                  to="/ethics"
+                  className="block px-4 py-2 text-sm text-gray-700 hover:bg-blue-50"
+                >
+                  Ethics, Systems & Culture
+                </NavLink>
                 <NavLink
                   to="/TeamLeader"
                   className="block px-4 py-2 text-sm text-gray-700 hover:bg-blue-50"
@@ -74,10 +86,10 @@ const Layout: React.FC = () => {
                   KPI & Budget Tools
                 </NavLink>
                 <NavLink
-                  to="/resume"
+                  to="/summary"
                   className="block px-4 py-2 text-sm text-gray-700 hover:bg-blue-50"
                 >
-                  Resume
+                  summary
                 </NavLink>
               </div>
             </div>
@@ -127,11 +139,12 @@ const Layout: React.FC = () => {
         </div>
 
         {/* Mobile Navigation */}
+        {/* Mobile Navigation */}
         <div
           className={`md:hidden absolute top-full left-0 right-0 bg-white shadow-lg transition-all duration-300 overflow-hidden ${isMenuOpen ? 'max-h-96' : 'max-h-0'
             }`}
         >
-          <div className="container py-4 flex flex-col space-y-4">
+          <div className="container py-4 flex flex-col space-y-4 max-h-80 overflow-y-auto">
             <NavLink
               to="/"
               className="px-4 py-2 hover:bg-gray-100 rounded"
@@ -148,6 +161,13 @@ const Layout: React.FC = () => {
               About
             </NavLink>
             <NavLink
+              to="/timeline"
+              className="px-4 py-2 hover:bg-gray-100 rounded"
+              onClick={toggleMenu}
+            >
+              Timeline (Gantt Chart)
+            </NavLink>
+            <NavLink
               to="/ethics"
               className="px-4 py-2 hover:bg-gray-100 rounded"
               onClick={toggleMenu}
@@ -159,8 +179,7 @@ const Layout: React.FC = () => {
               className="px-4 py-2 hover:bg-gray-100 rounded"
               onClick={toggleMenu}
             >
-              Team
-              Leadership & HR Tools
+              Team Leadership & HR Tools
             </NavLink>
             <NavLink
               to="/KPI"
@@ -204,33 +223,9 @@ const Layout: React.FC = () => {
             >
               Contact
             </NavLink>
-
-            <div className="flex space-x-4 pt-2 border-t border-gray-200">
-              <a
-                href="https://github.com/"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="p-2 text-gray-600 hover:text-blue-900 transition-colors"
-              >
-                <Github size={20} />
-              </a>
-              <a
-                href="https://linkedin.com/in/"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="p-2 text-gray-600 hover:text-blue-900 transition-colors"
-              >
-                <Linkedin size={20} />
-              </a>
-              <a
-                href="mailto:Nifa2025@email.com"
-                className="p-2 text-gray-600 hover:text-blue-900 transition-colors"
-              >
-                <Mail size={20} />
-              </a>
-            </div>
           </div>
         </div>
+
       </header>
 
       <main className="flex-grow pt-20">
